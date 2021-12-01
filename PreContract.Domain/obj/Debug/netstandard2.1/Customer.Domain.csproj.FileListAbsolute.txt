@@ -1,0 +1,10 @@
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.deps.json
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.pdb
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.AssemblyInfo.cs
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.pdb

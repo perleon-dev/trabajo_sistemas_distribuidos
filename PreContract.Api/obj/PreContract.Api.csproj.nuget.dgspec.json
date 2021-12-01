@@ -1,0 +1,287 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Api\\PreContract.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Api\\PreContract.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Api\\PreContract.Api.csproj",
+        "projectName": "PreContract.Api",
+        "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Api\\PreContract.Api.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\PreContract.Application.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\PreContract.Application.csproj"
+              },
+              "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj"
+              },
+              "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\PreContract.Repository.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\PreContract.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\PreContract.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\PreContract.Application.csproj",
+        "projectName": "PreContract.Application",
+        "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\PreContract.Application.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj",
+        "projectName": "PreContract.Domain",
+        "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\PreContract.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\PreContract.Repository.csproj",
+        "projectName": "PreContract.Repository",
+        "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\PreContract.Repository.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

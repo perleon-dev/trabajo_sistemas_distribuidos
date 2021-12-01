@@ -1,0 +1,10 @@
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\PreContract.Application.deps.json
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\PreContract.Application.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\PreContract.Application.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.AssemblyInfo.cs
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\obj\Debug\netstandard2.1\PreContract.Application.pdb

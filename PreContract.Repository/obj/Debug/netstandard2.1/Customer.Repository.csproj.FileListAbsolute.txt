@@ -1,0 +1,13 @@
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.deps.json
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.pdb
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.pdb
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfo.cs
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CopyComplete
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.pdb

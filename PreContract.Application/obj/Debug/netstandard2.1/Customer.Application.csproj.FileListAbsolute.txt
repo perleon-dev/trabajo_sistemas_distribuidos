@@ -1,0 +1,30 @@
+D:\notocar\Apliaciones\customer\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.deps.json
+D:\notocar\Apliaciones\customer\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.dll
+D:\notocar\Apliaciones\customer\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.pdb
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfo.cs
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.dll
+D:\notocar\Apliaciones\customer\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.pdb
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.deps.json
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.pdb
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfo.cs
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.dll
+D:\notocar\Apliaciones\customer\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.deps.json
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfo.cs
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.pdb

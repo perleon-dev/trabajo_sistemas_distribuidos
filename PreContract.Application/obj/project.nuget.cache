@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i5zPIPqpTe87qmxtPz8BfH1Ldc97zWjts+GK6lgSV65UG1L8gGmoaISSIjDXJiQUXC8v6eMB0icp42m8NmlGNg==",
+  "success": true,
+  "projectFilePath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Application\\PreContract.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tawa\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

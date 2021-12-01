@@ -1,0 +1,13 @@
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\bin\Debug\netstandard2.1\PreContract.Repository.deps.json
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\bin\Debug\netstandard2.1\PreContract.Repository.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\bin\Debug\netstandard2.1\PreContract.Repository.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\bin\Debug\netstandard2.1\PreContract.Domain.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\bin\Debug\netstandard2.1\PreContract.Domain.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.AssemblyInfo.cs
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.csproj.CopyComplete
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.dll
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\obj\Debug\netstandard2.1\PreContract.Repository.pdb
