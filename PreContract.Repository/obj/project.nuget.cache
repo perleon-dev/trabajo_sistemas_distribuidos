@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KzOWOgKhz9fqqfr3SJiJ5QSaI9tzdX0o6h13eSfQVQTN+7g9tPrvJKBr3G+CNZXws4S57pr2ZKcNGuT6NFJgcw==",
+  "dgSpecHash": "FOq23LWcoZq4BtpnZUX0zRyKiuOdmr7hlt3nTTIADxT8ZUMXRNuVn9FcGozKYk09VcXemIp73bmGd5wfF8s9bg==",
   "success": true,
   "projectFilePath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Repository\\PreContract.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tawa\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Tawa\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Tawa\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Tawa\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

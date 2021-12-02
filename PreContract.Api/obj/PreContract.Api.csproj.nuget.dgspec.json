@@ -118,7 +118,11 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\Sistemas Distribuidos\\trabajo_sistemas_distribuidos_backend\\PreContract.Domain\\PreContract.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -131,9 +135,29 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[5.8.3, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
@@ -258,6 +282,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.90, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

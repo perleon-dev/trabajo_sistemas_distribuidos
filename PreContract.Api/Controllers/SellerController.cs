@@ -9,7 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Customer.Api.Controllers
+namespace PreContracts.Api.Controllers
 {
     [Route("seller")]
     [ApiController]

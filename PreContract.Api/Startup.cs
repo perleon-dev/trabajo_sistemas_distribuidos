@@ -37,7 +37,11 @@ namespace Customer.Api
         {
             builder.RegisterModule(new MediatorModule());
             builder.RegisterModule(new ApplicationModule(Configuration["ConnectionString"],
-                                                        Configuration["TimeZone"]));
+                                                        Configuration["TimeZone"],
+                                                        Configuration["AddressSender"],
+                                                        Configuration["bucketNamePreContractExcel"],
+                                                        Configuration["bucketNamePreContractJson"],
+                                                        Configuration["bucketNamePreContractTemplate"]));
 
         }
 
