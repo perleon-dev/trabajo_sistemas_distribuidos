@@ -3,6 +3,7 @@ using Contracts.Api.Application.Queries.Generic;
 using Contracts.Api.Application.Queries.Implementations;
 using Contracts.Api.Application.Queries.Interfaces;
 using Contracts.Api.Application.Queries.Mappers;
+using Contracts.Api.Application.Queries.Querys;
 using Contracts.Api.Domain.Aggregates.PreContractAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
@@ -59,11 +60,12 @@ namespace Customer.Api.Infraestructure.AutofacModules
             builder.Register(c => new ValuesSettingsApi(_timeZone)).As<IValuesSettingsApi>().InstancePerLifetimeScope();
 
             builder.Register(c => new ValuesSettingsLambda("", "", "", "")).As<IValuesSettingsLambda>().InstancePerLifetimeScope();
-
+            builder.Register(c => new QueryHandler(_connectionString)).As<IQueryHandler>().InstancePerLifetimeScope();
 
             #endregion
 
             #region Queries
+
             builder.RegisterType<PreContractVariableCommissionRangeQuery>()
     .As<IPreContractVariableCommissionRangeQuery>()
     .InstancePerLifetimeScope();
@@ -109,6 +111,11 @@ namespace Customer.Api.Infraestructure.AutofacModules
                .As<IPreContractVariableCommissionRangeQuery>()
                .InstancePerLifetimeScope();
 
+
+            builder.RegisterType<LogContractQuery>()
+                .As<ILogContractQuery>()
+                .InstancePerLifetimeScope();
+
             #endregion
 
             #region Mapper
@@ -147,7 +154,7 @@ namespace Customer.Api.Infraestructure.AutofacModules
                 .As<IPreContractVariableCommissionRangeMapper>()
                 .InstancePerLifetimeScope();
 
-
+            builder.RegisterType<LogContractMapper>().As<ILogContractMapper>().InstancePerLifetimeScope();
 
             #endregion
 

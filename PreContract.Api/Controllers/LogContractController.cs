@@ -13,7 +13,7 @@ using Contracts.Api.Application.Commands.LogContractCommand;
 
 namespace PreContracts.API.Controllers
 {
-	[Authorize]
+
 	[Route("contracts/logs")]
 	[ApiController]
 	public class LogContractController : ControllerBase
