@@ -155,6 +155,7 @@ namespace Customer.Api.Infraestructure.AutofacModules
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<LogContractMapper>().As<ILogContractMapper>().InstancePerLifetimeScope();
+            builder.RegisterType<CategoryMapper>().As<ICategoryMapper>().InstancePerLifetimeScope();
 
             #endregion
 

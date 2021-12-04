@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace PreContracts.Api.Controllers
 {
-	[Authorize]
 	[Route("contracts/pre-contract")]
 	[ApiController]
 	public class PreContractController : ControllerBase

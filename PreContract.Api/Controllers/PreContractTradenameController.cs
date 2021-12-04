@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 
 namespace PreContracts.Api.Controllers
 {
-	[Authorize]
 	[Route("contracts/pre-contract/tradenames")]
 	[ApiController]
 	public class PreContractTradenameController : ControllerBase

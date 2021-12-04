@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 
 namespace PreContracts.Api.Controllers
 {
-	[Authorize]
 	[Route("contracts/pre-contract/variable-commission-ranges")]
 	[ApiController]
 	public class PreContractVariableCommissionRangeController : ControllerBase
