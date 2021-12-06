@@ -383,4 +383,20 @@
         ACTA_APERTURA_ANULADA = 12,
         PENDIENTE_MODIFICACION = 15
     }
+
+    public struct StatePreContractLog
+    {
+        public const int Pending = 1;
+        public const int InProcess = 2;
+        public const int SatisfactionProcess = 3;
+        public const int FailedProcess = 4;
+    }
+
+    public struct StatePreContract
+    {
+        public const int Pending = 1;
+        public const int SatisfactionProcess = 2;
+        public const int InProcess = 3;
+        public const int Anulled = 0;
+    }
 }

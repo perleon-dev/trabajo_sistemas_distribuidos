@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Customer.Application.Commands.SellerCommands
+namespace Contracts.Application.Commands.SellerCommands
 {
     public class CreateSellerCommandHandlercs : IRequestHandler<CreateSellerCommand, bool>
     {

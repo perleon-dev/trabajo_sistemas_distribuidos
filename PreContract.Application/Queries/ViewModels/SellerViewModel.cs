@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Customer.Application.Queries.ViewModels
+namespace Contracts.Application.Queries.ViewModels
 {
     public class SellerViewModel
     {

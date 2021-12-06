@@ -7,7 +7,7 @@ using Contracts.Api.Application.Commands.PreContractLogCommands;
 using Contracts.Api.Application.Commands.PreContractLogDetailCommand;
 using Contracts.Api.Application.Commands.PreContractTradenameCommands;
 using Contracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand;
-using Customer.Application.Commands.SellerCommands;
+using Contracts.Application.Commands.SellerCommands;
 using MediatR;
 using System;
 using System.Collections.Generic;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Customer.Application.Queries.Querys
+namespace Contracts.Application.Queries.Querys
 {
     public class SellerQuery
     {

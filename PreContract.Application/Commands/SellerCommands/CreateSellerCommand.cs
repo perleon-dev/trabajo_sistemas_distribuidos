@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Customer.Application.Commands.SellerCommands
+namespace Contracts.Application.Commands.SellerCommands
 {
     public class CreateSellerCommand : IRequest<bool>
     {

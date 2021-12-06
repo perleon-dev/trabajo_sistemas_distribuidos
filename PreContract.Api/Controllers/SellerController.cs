@@ -1,6 +1,5 @@
-﻿using Customer.Application.Commands.SellerCommands;
-using Customer.Application.Queries.Implementations;
-using Customer.Application.Queries.Interfaces;
+﻿using Contracts.Application.Commands.SellerCommands;
+using Contracts.Application.Queries.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System;

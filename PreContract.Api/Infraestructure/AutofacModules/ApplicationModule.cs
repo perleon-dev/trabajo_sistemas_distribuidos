@@ -12,6 +12,12 @@ using Contracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
 using Contracts.Api.Repository.Repositories;
+using Contracts.Aplication.Queries.Implementations;
+using Contracts.Aplication.Queries.Interfaces;
+using Contracts.Aplication.Queries.Mappers;
+using Contracts.Application.Queries.Implementations;
+using Contracts.Application.Queries.Interfaces;
+using Contracts.Application.Queries.Mappers;
 using Customer.Domain.Aggregates.ConnectionBase;
 using Customer.Domain.Aggregates.SellerAggregate;
 using Customer.Repository.Repositories;
@@ -90,6 +96,11 @@ namespace Customer.Api.Infraestructure.AutofacModules
                 .As<ICategoryQueryHandler>()
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<CustomerQueryHandler>()
+                .As<ICustomerQueryHandler>()
+                .InstancePerLifetimeScope();
+            
+
             builder.RegisterType<PreContractQuery>()
                 .As<IPreContractQuery>()
                 .InstancePerLifetimeScope();
@@ -103,8 +114,8 @@ namespace Customer.Api.Infraestructure.AutofacModules
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<PreContractLogDetailQuery>()
-   .As<IPreContractLogDetailQuery>()
-   .InstancePerLifetimeScope();
+                    .As<IPreContractLogDetailQuery>()
+                    .InstancePerLifetimeScope();
 
 
             builder.RegisterType<PreContractVariableCommissionRangeQuery>()
@@ -116,6 +127,19 @@ namespace Customer.Api.Infraestructure.AutofacModules
                 .As<ILogContractQuery>()
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<TradenameQuery>()
+                .As<ITradenameQuery>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<IdSummaQuery>()
+                .As<IIdSummaQuery>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<CustomerSummaQuery>()
+                .As<ICustomerSummaQuery>()
+                .InstancePerLifetimeScope();
+
+            
             #endregion
 
             #region Mapper
@@ -156,7 +180,11 @@ namespace Customer.Api.Infraestructure.AutofacModules
 
             builder.RegisterType<LogContractMapper>().As<ILogContractMapper>().InstancePerLifetimeScope();
             builder.RegisterType<CategoryMapper>().As<ICategoryMapper>().InstancePerLifetimeScope();
-
+            builder.RegisterType<TradenameMapper>().As<ITradenameMapper>().InstancePerLifetimeScope();
+            builder.RegisterType<CustomerMapper>().As<ICustomerMapper>().InstancePerLifetimeScope();
+            builder.RegisterType<IdSummaMapper>().As<IIdSummaMapper>().InstancePerLifetimeScope();
+            builder.RegisterType<CustomerSummaMapper>().As<ICustomerSummaMapper>().InstancePerLifetimeScope();
+            
             #endregion
 
             #region Repositoy

@@ -1,12 +1,13 @@
-﻿using Customer.Application.Queries.Interfaces;
-using Customer.Application.Queries.Querys;
-using Customer.Application.Queries.ViewModels;
+﻿
+using Contracts.Application.Queries.Interfaces;
+using Contracts.Application.Queries.Querys;
+using Contracts.Application.Queries.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Customer.Application.Queries.Implementations
+namespace Contract.Application.Queries.Implementations
 {
     public class SellerQueryHandler : ISellerQueryHandler
     {
