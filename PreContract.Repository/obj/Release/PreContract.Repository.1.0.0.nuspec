@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>PreContract.Repository</id>
+    <version>1.0.0</version>
+    <authors>PreContract.Repository</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="PreContract.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Dapper" version="2.0.90" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.8.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Repository\bin\Release\netstandard2.1\PreContract.Repository.dll" target="lib\netstandard2.1\PreContract.Repository.dll" />
+  </files>
+</package>
