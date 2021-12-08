@@ -1,3 +1,9 @@
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Templates\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Templates\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Templates\Formato VTexToVTex.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Resources\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Resources\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Resources\Formato VTexToVTex.xlsx
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\PreContract.Api.exe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\appsettings.json
@@ -12,7 +18,6 @@ D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\MediatR.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Http.Features.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.Primitives.dll
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.IO.RecyclableMemoryStream.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll

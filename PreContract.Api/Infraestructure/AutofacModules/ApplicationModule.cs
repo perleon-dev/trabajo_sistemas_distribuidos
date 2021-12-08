@@ -4,6 +4,7 @@ using Contracts.Api.Application.Queries.Implementations;
 using Contracts.Api.Application.Queries.Interfaces;
 using Contracts.Api.Application.Queries.Mappers;
 using Contracts.Api.Application.Queries.Querys;
+using Contracts.Api.Domain.Aggregates.LogContractAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
 using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
@@ -18,6 +19,7 @@ using Contracts.Aplication.Queries.Mappers;
 using Contracts.Application.Queries.Implementations;
 using Contracts.Application.Queries.Interfaces;
 using Contracts.Application.Queries.Mappers;
+using Contracts.Repository;
 using Customer.Domain.Aggregates.ConnectionBase;
 using Customer.Domain.Aggregates.SellerAggregate;
 using Customer.Repository.Repositories;
@@ -219,6 +221,12 @@ namespace Customer.Api.Infraestructure.AutofacModules
             builder.Register(c => new PreContractEconomicConditionRepository(_connectionString))
                 .As<IPreContractEconomicConditionRepository>()
                 .InstancePerLifetimeScope();
+
+            builder.Register(c => new LogContractRepository(_connectionString))
+                .As<ILogContractRepository>()
+                .InstancePerLifetimeScope();
+
+            
             #endregion
 
             #region Services

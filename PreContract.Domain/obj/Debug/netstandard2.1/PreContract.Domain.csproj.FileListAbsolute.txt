@@ -7,3 +7,4 @@ D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Domain\obj\Debug\netstandard2.1\PreContract.Domain.csproj.CoreCompileInputs.cache
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Domain\obj\Debug\netstandard2.1\PreContract.Domain.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Domain\obj\Debug\netstandard2.1\PreContract.Domain.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Domain\obj\Debug\netstandard2.1\PreContract.Domain.csproj.AssemblyReference.cache

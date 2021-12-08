@@ -1,9 +1,11 @@
 ﻿using Contracts.Api.Application.Commands.PreContractCommands;
+using Contracts.Api.Application.Queries.Implementations;
 using Contracts.Api.Application.Queries.Interfaces;
 using Contracts.Api.Application.Queries.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PreContract.Application.Commands.PreContractCommands;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -50,12 +52,12 @@ namespace PreContracts.Api.Controllers
 
 		[HttpGet]
 		[Route("find-all")]
-		[ProducesResponseType(typeof((IEnumerable<PreContractViewModel>, int)), (int)HttpStatusCode.OK)]
+		[ProducesResponseType(typeof(PaginatePrecontract), (int)HttpStatusCode.OK)]
 		public async Task<IActionResult> GetByFindAll([FromQuery] PreContractRequest request)
 		{
-			var result = await _iPreContractQuery.GetByFindAll(request);
+			var resp = await _iPreContractQuery.GetByFindAll(request);
 
-			return Ok(result);
+			return Ok(resp);
 		}
 
 		[HttpPost]
@@ -133,5 +135,18 @@ namespace PreContracts.Api.Controllers
 
 			return Ok(result);
 		}
+
+
+		[HttpPost("translate-precontract")]
+		[ProducesResponseType((int)HttpStatusCode.OK)]
+		[ProducesResponseType((int)HttpStatusCode.BadRequest)]
+		public async Task<IActionResult>TranslatePreContract(TranslatePreContractCommand command)
+		{
+			var result = await _mediator.Send(command);
+
+			return Ok(result);
+		}
+
+		
 	}
 }

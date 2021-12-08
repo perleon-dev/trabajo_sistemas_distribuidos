@@ -14,7 +14,6 @@ D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\MediatR.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Microsoft.AspNetCore.Http.Features.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Microsoft.OpenApi.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Newtonsoft.Json.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -50,3 +49,9 @@ D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\ref\PreContract.Api.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PreContract.Api.pdb
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Release\net5.0\PreContract.Api.genruntimeconfig.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Templates\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Templates\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Templates\Formato VTexToVTex.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Resources\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Resources\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Release\net5.0\Resources\Formato VTexToVTex.xlsx

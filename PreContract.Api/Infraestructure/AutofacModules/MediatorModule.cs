@@ -10,6 +10,7 @@ using Contracts.Api.Application.Commands.PreContractTradenameCommands;
 using Contracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand;
 using Contracts.Application.Commands.SellerCommands;
 using MediatR;
+using PreContract.Application.Commands.PreContractCommands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -77,6 +78,9 @@ namespace Customer.Api.Infraestructure.AutofacModules
                 .AsClosedTypesOf(typeof(IRequestHandler<,>));
 
             builder.RegisterAssemblyTypes(typeof(UpdateLogContractCommand).GetTypeInfo().Assembly)
+                .AsClosedTypesOf(typeof(IRequestHandler<,>));
+
+            builder.RegisterAssemblyTypes(typeof(TranslatePreContractCommand).GetTypeInfo().Assembly)
                 .AsClosedTypesOf(typeof(IRequestHandler<,>));
             
 

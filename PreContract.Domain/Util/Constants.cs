@@ -399,4 +399,9 @@
         public const int InProcess = 3;
         public const int Anulled = 0;
     }
+
+    public struct Malls
+    {
+        public const int RpGo = 79;
+    }
 }

@@ -56,7 +56,7 @@ namespace Contracts.Api.Application.Queries.Implementations
 			return items;
 		}
 
-		public async Task<(IEnumerable<PreContractViewModel>, int)> GetByFindAll(PreContractRequest request)
+		public async Task<PaginatePrecontract> GetByFindAll(PreContractRequest request)
 		{
 			var parameters = new Dictionary<string, object>
 			{
@@ -73,8 +73,8 @@ namespace Contracts.Api.Application.Queries.Implementations
 			var (result, quantity) = await _iGenericQuery.FindAll<dynamic>(@"CONTRACT.adv_t_pre_contract_find_all", parametersXml, request.PageIndex, request.PageSize, (string.IsNullOrEmpty(request.SortProperty)) ? string.Empty: request.SortProperty);
 
 			var items = result.Select(item => (PreContractViewModel)_iPreContractMapper.MapToPreContractViewModel(item));
-
-			return (items, quantity);
+			var resp = new PaginatePrecontract() { items = items.ToList(), quantity = quantity };
+			return resp;
 		}
 
 		public async Task<string> DownloadTemplateContractMarketPlace()
@@ -262,5 +262,11 @@ namespace Contracts.Api.Application.Queries.Implementations
 			return base64;
 		}
 
+	}
+
+	public class PaginatePrecontract 
+	{
+		public List<PreContractViewModel> items { get; set; }
+		public int quantity { get; set; }
 	}
 }

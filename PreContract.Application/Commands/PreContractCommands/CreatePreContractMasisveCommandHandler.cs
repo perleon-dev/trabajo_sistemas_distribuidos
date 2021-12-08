@@ -10,8 +10,10 @@ using Contracts.Application.Queries.Interfaces;
 using Contracts.Application.Queries.ViewModels;
 //using Contracts.Api.Services.Interfaces;
 using MediatR;
+using Newtonsoft.Json;
 //using Newtonsoft.Json;
 using OfficeOpenXml;
+using PreContract.Application.Commands.PreContractCommands;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -191,6 +193,9 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                 }
 
                 result = await this._imediator.Send(createPreContractLogCommand, new System.Threading.CancellationToken());
+
+                var command_trasnlate = new TranslatePreContractCommand() { id = result };
+                await this._imediator.Send(command_trasnlate);
             }
             catch (Exception ex)
             {
@@ -268,12 +273,6 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                     }
 
            
-                }
-
-                if (excelWorksheet.Cells[startRow, 3].Value != null)
-                {
-                    if (!categorylist.Where(x => x.categoryId == int.Parse(excelWorksheet.Cells[startRow, 3].Value.ToString())).Any())
-                        messageValidationCategory = "La categpría no se encuentra registrada,";
                 }
 
                 if (excelWorksheet.Cells[startRow, 1].Value != null && excelWorksheet.Cells[startRow, 2].Value != null &&
