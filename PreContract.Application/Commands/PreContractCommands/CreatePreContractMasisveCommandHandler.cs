@@ -156,7 +156,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
 
                 var tradenameFound = await _ITradenameQuery.GetBySearch(new TradenameRequest() { });
                 //var customersFound = await _ICustomerQueryHandler.GetByFiltersAsync(new Aplication.Queries.Querys.CustomerQuery { activo = 1});
-                var idSummaFound = await _IIdSummaQuery.GetBySearch(new IdSummaRequest { });
+                //var idSummaFound = await _IIdSummaQuery.GetBySearch(new IdSummaRequest { });
                 var customerSummaFound = await _ICustomerSummaQuery.GetBySearch(new CustomerSummaRequest { });
                 var categoryFound = await this._iCategoryQueryHandler.Search(new Api.Application.Queries.Querys.CategoryQuery());
 
@@ -181,11 +181,11 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                     };
 
                     if (command.contractType == ContractTypePreContract.VTex)
-                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVTex(workSheet, start, end, idSummaFound, customerSummaFound, categoryFound, tradenameFound);
+                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVTex(workSheet, start, end, customerSummaFound, categoryFound, tradenameFound);
                     else if (command.contractType == ContractTypePreContract.SellerCenter)
-                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateSellerCenter(workSheet, start, end, idSummaFound, customerSummaFound, tradenameFound, categoryFound); //customersFound
+                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateSellerCenter(workSheet, start, end, customerSummaFound, tradenameFound, categoryFound); //customersFound
                     else if (command.contractType == ContractTypePreContract.VTexToVTex)
-                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVtexToVtex(workSheet, start, end, idSummaFound, customerSummaFound, tradenameFound, categoryFound); // customersFound,
+                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVtexToVtex(workSheet, start, end, customerSummaFound, tradenameFound, categoryFound); // customersFound,
 
                     createPreContractLogCommand.number_record = createPreContractLogCommand.createPreContractLogDetailCommands.Count();
                 }
@@ -231,7 +231,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
             return value;
         }
 
-        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateVTex(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel> customerSummaList, IEnumerable<CategoryViewModel> categorylist, IEnumerable<TradenameViewModel> tradenameList)
+        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateVTex(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<CustomerSummaViewModel> customerSummaList, IEnumerable<CategoryViewModel> categorylist, IEnumerable<TradenameViewModel> tradenameList)
         {
             List<CreatePreContractLogDetailCommand> createPreContractLogDetail = new List<CreatePreContractLogDetailCommand>();
             CreatePreContractLogDetailCommand preContractLogDetails = null;
@@ -267,16 +267,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                             rucAnulled.Add(excelWorksheet.Cells[startRow, 1].Value.ToString());
                     }
 
-                    var idSummaFound = idSummaList.Where(x => x.tradename == excelWorksheet.Cells[startRow, 2].Value.ToString().Trim());
-                    var tradenameFound = tradenameList.Where(t => t.TradenameName == excelWorksheet.Cells[startRow, 2].Value.ToString().Trim());
-                    if (!idSummaFound.Any() || !tradenameFound.Any())
-                        messageValidation = "El Id Summa no esta registrado,";
-                    else
-                    {
-                        var customerSummaFound = customerSummaList.Where(x => x.id_summa == idSummaFound.FirstOrDefault().id_summa && x.document_id == excelWorksheet.Cells[startRow, 1].Value.ToString());
-                        if (!customerSummaFound.Any())
-                            messageValidation = "El R.U.C, no esta asociado al Id Summa";
-                    }
+           
                 }
 
                 if (excelWorksheet.Cells[startRow, 3].Value != null)
@@ -503,7 +494,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
             return observation;
         }
 
-        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateSellerCenter(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist) // IEnumerable<CustomerViewModel> customerList,
+        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateSellerCenter(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist) // IEnumerable<CustomerViewModel> customerList,
         {
             List<CreatePreContractLogDetailCommand> preContractLogDetailsList = new List<CreatePreContractLogDetailCommand>();
             CreatePreContractLogDetailCommand preContractLogDetails = null;
@@ -549,19 +540,6 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                     //    messageValidationCustomer = "El R.U.C., no esta registrado como cliente,";
                 }
 
-                if (excelWorksheet.Cells[startRow, 2].Value != null && excelWorksheet.Cells[startRow, 1].Value != null)
-                {
-                    var idSummaFound = idSummaList.Where(x => x.tradename == excelWorksheet.Cells[startRow, 2].Value.ToString().Trim());
-                    var tradenameFound = tradenameList.Where(t => t.TradenameName == excelWorksheet.Cells[startRow, 2].Value.ToString().Trim());
-                    if (!idSummaFound.Any() || !tradenameFound.Any())
-                        messageValidationIdSumma = "El Id Summa no esta registrado,";
-                    else
-                    {
-                        var customerSummaFound = customerSummaList.Where(x => x.id_summa == idSummaFound.FirstOrDefault().id_summa && x.document_id == excelWorksheet.Cells[startRow, 1].Value.ToString());
-                        if (!customerSummaFound.Any())
-                            messageValidationIdSumma = "El R.U.C, no esta asociado al Id Summa";
-                    }
-                }
 
                 if (!ValidityCategory(categorylist, excelWorksheet.Cells[startRow, 6].Value))
                     messageValidationIdSumma = "La Categoria no es valida,";
@@ -653,7 +631,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
             return await Task.FromResult(preContractLogDetailsList);
         }
 
-        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateVtexToVtex(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist) // IEnumerable<CustomerViewModel> customerList, I
+        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateVtexToVtex(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist) // IEnumerable<CustomerViewModel> customerList, I
         {
             List<CreatePreContractLogDetailCommand> preContractLogDetailsList = new List<CreatePreContractLogDetailCommand>();
             CreatePreContractLogDetailCommand preContractLogDetails = null;
@@ -698,19 +676,6 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                     //    messageValidationCustomer = "El R.U.C., no esta registrado como cliente,";
                 }
 
-                if (excelWorksheet.Cells[startRow, 2].Value != null && excelWorksheet.Cells[startRow, 1].Value != null)
-                {
-                    var idSummaFound = idSummaList.Where(x => x.tradename == excelWorksheet.Cells[startRow, 2].Value.ToString().Trim());
-                    var tradenameFound = tradenameList.Where(t => t.TradenameName == excelWorksheet.Cells[startRow, 2].Value.ToString().Trim());
-                    if (!idSummaFound.Any() || !tradenameFound.Any())
-                        messageValidation = "El Id Summa no esta registrado,";
-                    else
-                    {
-                        var customerSummaFound = customerSummaList.Where(x => x.id_summa == idSummaFound.FirstOrDefault().id_summa && x.document_id == excelWorksheet.Cells[startRow, 1].Value.ToString());
-                        if (!customerSummaFound.Any())
-                            messageValidation = "El R.U.C, no esta asociado al Id Summa";
-                    }
-                }
 
                 if (!ValidityCategory(categorylist, excelWorksheet.Cells[startRow, 5].Value))
                     messageValidation = "La Categoria no es valida,";
