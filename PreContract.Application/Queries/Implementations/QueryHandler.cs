@@ -42,7 +42,7 @@ namespace Contracts.Api.Application.Queries.Querys
                 parameters.Add("@pit_parametrosXML", parametersXml, DbType.String);
                 parameters.Add("@piv_orderBy", sort, DbType.String);
 
-                return await connection.QueryAsync<T>(procedure, parameters, commandType: CommandType.StoredProcedure);
+                return await connection.QueryAsync<T>(procedure, parameters, commandTimeout:10000 ,commandType: CommandType.StoredProcedure);
             }
         }
 

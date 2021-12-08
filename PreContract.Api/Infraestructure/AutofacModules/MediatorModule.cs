@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Contracts.Api.Application.Commands.LogContractCommand;
 using Contracts.Api.Application.Commands.PreContractBankAccountCommands;
 using Contracts.Api.Application.Commands.PreContractCommands;
 using Contracts.Api.Application.Commands.PreContractEconomicConditionCommands;
@@ -72,6 +73,12 @@ namespace Customer.Api.Infraestructure.AutofacModules
             builder.RegisterAssemblyTypes(typeof(SendPreContractCommand).GetTypeInfo().Assembly)
                 .AsClosedTypesOf(typeof(IRequestHandler<,>));
 
+            builder.RegisterAssemblyTypes(typeof(CreateLogContractCommand).GetTypeInfo().Assembly)
+                .AsClosedTypesOf(typeof(IRequestHandler<,>));
+
+            builder.RegisterAssemblyTypes(typeof(UpdateLogContractCommand).GetTypeInfo().Assembly)
+                .AsClosedTypesOf(typeof(IRequestHandler<,>));
+            
 
             builder.Register<ServiceFactory>(context =>
             {

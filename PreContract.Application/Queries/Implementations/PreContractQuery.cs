@@ -79,75 +79,82 @@ namespace Contracts.Api.Application.Queries.Implementations
 
 		public async Task<string> DownloadTemplateContractMarketPlace()
 		{
-			Console.WriteLine($"Iniciar");
-			var assembly = Assembly.GetExecutingAssembly();
-			var demo = assembly.GetManifestResourceNames();
-			var resourceName = assembly.GetManifestResourceNames().First(s => s.EndsWith(TemplatePreContract.TemplateSellerCenter, StringComparison.CurrentCultureIgnoreCase));
-
-			var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
-			var base64 = string.Empty;
-			var list_category = await _icategoryQueryHandler.Search(new CategoryQuery { typeSeller =ContractTypePreContract.SellerCenter, sortProperty = "category_name" });
-			List<DepartmentCategorySubCategory> ListDepartmentCategorySubCategory = new List<DepartmentCategorySubCategory>();
-			ConcatenarCategory(ListDepartmentCategorySubCategory, list_category.ToList(), string.Empty, string.Empty);
-			
-			byte[] byte_;
-
-			using (ExcelPackage package = new ExcelPackage(stream))
+			try
 			{
-				Console.WriteLine($"START ExcelPackage");
+				Console.WriteLine($"Iniciar");
+				var assembly = Assembly.GetExecutingAssembly();
+				var demo = assembly.GetManifestResourceNames();
+				var resourceName = assembly.GetManifestResourceNames().First(s => s.EndsWith(TemplatePreContract.TemplateSellerCenter, StringComparison.CurrentCultureIgnoreCase));
 
-				var workSheet = package.Workbook.Worksheets["DATA MAESTRA"];
-				var colorHeader = ColorTranslator.FromHtml("#2C7DCB");
+				var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
+				var base64 = string.Empty;
+				var list_category = await _icategoryQueryHandler.Search(new CategoryQuery { typeSeller = ContractTypePreContract.SellerCenter, sortProperty = "category_name" });
+				List<DepartmentCategorySubCategory> ListDepartmentCategorySubCategory = new List<DepartmentCategorySubCategory>();
+				ConcatenarCategory(ListDepartmentCategorySubCategory, list_category.ToList(), string.Empty, string.Empty);
 
-				workSheet.Column(1).Width = 10;
-				workSheet.Column(2).Width = 60;
+				byte[] byte_;
 
-				workSheet.Cells["A1:B1"].Style.Fill.PatternType = ExcelFillStyle.Solid;
-				workSheet.Cells["A1:B1"].Style.Fill.BackgroundColor.SetColor(colorHeader);
-				workSheet.Cells["A1:B1"].Style.Font.Color.SetColor(Color.White);
-				workSheet.Cells["A1:B1"].Style.Font.Bold = true;
-				workSheet.Cells["A1:B1"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-				workSheet.Cells["A1:B1"].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
-
-				workSheet.Row(1).Height = 20;
-				
-				workSheet.Cells["A1"].Value = "ID";
-				workSheet.Cells["B1"].Value = "CATEGORIA";
-				var index = 2;
-				workSheet.Cells[$"A1:B1"].Style.Border.Top.Style = ExcelBorderStyle.Thin;
-				workSheet.Cells[$"A1:B1"].Style.Border.Left.Style = ExcelBorderStyle.Thin;
-				workSheet.Cells[$"A1:B1"].Style.Border.Right.Style = ExcelBorderStyle.Thin;
-				workSheet.Cells[$"A1:B1"].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
-				Console.WriteLine($"Crea la cabecera ExcelPackage");
-				foreach (var item in ListDepartmentCategorySubCategory) 
+				using (ExcelPackage package = new ExcelPackage(stream))
 				{
-					try
-					{
-						workSheet.Cells[$"A{index}:B{index}"].Style.Border.Top.Style = ExcelBorderStyle.Thin;
-						workSheet.Cells[$"A{index}:B{index}"].Style.Border.Left.Style = ExcelBorderStyle.Thin;
-						workSheet.Cells[$"A{index}:B{index}"].Style.Border.Right.Style = ExcelBorderStyle.Thin;
-						workSheet.Cells[$"A{index}:B{index}"].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+					Console.WriteLine($"START ExcelPackage");
 
-						workSheet.Cells[index, 1].Value = item.category_id;
-						workSheet.Cells[index, 2].Value = $"{item.category_id} - {item.Description}";
-						index++;
-					}
-					catch (Exception e)
+					var workSheet = package.Workbook.Worksheets["DATA MAESTRA"];
+					var colorHeader = ColorTranslator.FromHtml("#2C7DCB");
+
+					workSheet.Column(1).Width = 10;
+					workSheet.Column(2).Width = 60;
+
+					workSheet.Cells["A1:B1"].Style.Fill.PatternType = ExcelFillStyle.Solid;
+					workSheet.Cells["A1:B1"].Style.Fill.BackgroundColor.SetColor(colorHeader);
+					workSheet.Cells["A1:B1"].Style.Font.Color.SetColor(Color.White);
+					workSheet.Cells["A1:B1"].Style.Font.Bold = true;
+					workSheet.Cells["A1:B1"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+					workSheet.Cells["A1:B1"].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+
+					workSheet.Row(1).Height = 20;
+
+					workSheet.Cells["A1"].Value = "ID";
+					workSheet.Cells["B1"].Value = "CATEGORIA";
+					var index = 2;
+					workSheet.Cells[$"A1:B1"].Style.Border.Top.Style = ExcelBorderStyle.Thin;
+					workSheet.Cells[$"A1:B1"].Style.Border.Left.Style = ExcelBorderStyle.Thin;
+					workSheet.Cells[$"A1:B1"].Style.Border.Right.Style = ExcelBorderStyle.Thin;
+					workSheet.Cells[$"A1:B1"].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+					Console.WriteLine($"Crea la cabecera ExcelPackage");
+					foreach (var item in ListDepartmentCategorySubCategory)
 					{
-						Console.WriteLine(e.ToString());
+						try
+						{
+							workSheet.Cells[$"A{index}:B{index}"].Style.Border.Top.Style = ExcelBorderStyle.Thin;
+							workSheet.Cells[$"A{index}:B{index}"].Style.Border.Left.Style = ExcelBorderStyle.Thin;
+							workSheet.Cells[$"A{index}:B{index}"].Style.Border.Right.Style = ExcelBorderStyle.Thin;
+							workSheet.Cells[$"A{index}:B{index}"].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+
+							workSheet.Cells[index, 1].Value = item.category_id;
+							workSheet.Cells[index, 2].Value = $"{item.category_id} - {item.Description}";
+							index++;
+						}
+						catch (Exception e)
+						{
+							Console.WriteLine(e.ToString());
+						}
+
 					}
-					
+					Console.WriteLine($"Termina de llenar la data ExcelPackage");
+					var validationCell = workSheet.DataValidations.AddListValidation("D1");
+					validationCell.Formula.ExcelFormula = $"=$B$2:$B${index - 1}";
+
+
+					byte_ = package.GetAsByteArray();
 				}
-				Console.WriteLine($"Termina de llenar la data ExcelPackage");
-				var validationCell = workSheet.DataValidations.AddListValidation("D1");
-				validationCell.Formula.ExcelFormula = $"=$B$2:$B${index-1}";
-
-
-				byte_ = package.GetAsByteArray();
+				Console.WriteLine($"Manda los datos en formato BASE64");
+				base64 = Convert.ToBase64String(byte_);
+				return base64;
 			}
-			Console.WriteLine($"Manda los datos en formato BASE64");
-			base64 = Convert.ToBase64String(byte_);
-			return base64;
+			catch (Exception e) 
+			{
+				throw new ArgumentException(e.ToString());
+			}
 		}
 
 		private void ConcatenarCategory(List<DepartmentCategorySubCategory> ListDepartmentCategorySubCategory, List<CategoryViewModel> list_category, string categoryParentCode, string base_) 

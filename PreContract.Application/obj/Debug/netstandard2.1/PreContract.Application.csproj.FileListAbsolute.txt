@@ -1,3 +1,6 @@
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\Templates\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\Templates\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\Templates\Formato VTexToVTex.xlsx
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\PreContract.Application.deps.json
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\PreContract.Application.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Application\bin\Debug\netstandard2.1\PreContract.Application.pdb

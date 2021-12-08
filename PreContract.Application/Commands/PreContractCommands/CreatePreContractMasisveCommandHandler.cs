@@ -155,7 +155,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                 var objectExcel = command.document.OpenReadStream();
 
                 var tradenameFound = await _ITradenameQuery.GetBySearch(new TradenameRequest() { });
-                var customersFound = await _ICustomerQueryHandler.GetByFiltersAsync(new Aplication.Queries.Querys.CustomerQuery { activo = 1});
+                //var customersFound = await _ICustomerQueryHandler.GetByFiltersAsync(new Aplication.Queries.Querys.CustomerQuery { activo = 1});
                 var idSummaFound = await _IIdSummaQuery.GetBySearch(new IdSummaRequest { });
                 var customerSummaFound = await _ICustomerSummaQuery.GetBySearch(new CustomerSummaRequest { });
                 var categoryFound = await this._iCategoryQueryHandler.Search(new Api.Application.Queries.Querys.CategoryQuery());
@@ -183,9 +183,9 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                     if (command.contractType == ContractTypePreContract.VTex)
                         createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVTex(workSheet, start, end, idSummaFound, customerSummaFound, categoryFound, tradenameFound);
                     else if (command.contractType == ContractTypePreContract.SellerCenter)
-                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateSellerCenter(workSheet, start, end, idSummaFound, customerSummaFound, customersFound, tradenameFound, categoryFound);
+                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateSellerCenter(workSheet, start, end, idSummaFound, customerSummaFound, tradenameFound, categoryFound); //customersFound
                     else if (command.contractType == ContractTypePreContract.VTexToVTex)
-                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVtexToVtex(workSheet, start, end, idSummaFound, customerSummaFound, customersFound, tradenameFound, categoryFound);
+                        createPreContractLogCommand.createPreContractLogDetailCommands = await RegisterTemplateVtexToVtex(workSheet, start, end, idSummaFound, customerSummaFound, tradenameFound, categoryFound); // customersFound,
 
                     createPreContractLogCommand.number_record = createPreContractLogCommand.createPreContractLogDetailCommands.Count();
                 }
@@ -503,7 +503,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
             return observation;
         }
 
-        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateSellerCenter(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<CustomerViewModel> customerList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist)
+        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateSellerCenter(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist) // IEnumerable<CustomerViewModel> customerList,
         {
             List<CreatePreContractLogDetailCommand> preContractLogDetailsList = new List<CreatePreContractLogDetailCommand>();
             CreatePreContractLogDetailCommand preContractLogDetails = null;
@@ -545,8 +545,8 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                         else rucAnulled.Add(excelWorksheet.Cells[startRow, 1].Value.ToString());
                     }
 
-                    if (!customerList.Where(c => c.DocumentId == excelWorksheet.Cells[startRow, 1].Value.ToString().Trim()).Any())
-                        messageValidationCustomer = "El R.U.C., no esta registrado como cliente,";
+                    //if (!customerList.Where(c => c.DocumentId == excelWorksheet.Cells[startRow, 1].Value.ToString().Trim()).Any())
+                    //    messageValidationCustomer = "El R.U.C., no esta registrado como cliente,";
                 }
 
                 if (excelWorksheet.Cells[startRow, 2].Value != null && excelWorksheet.Cells[startRow, 1].Value != null)
@@ -653,7 +653,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
             return await Task.FromResult(preContractLogDetailsList);
         }
 
-        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateVtexToVtex(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<CustomerViewModel> customerList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist)
+        private async Task<List<CreatePreContractLogDetailCommand>> RegisterTemplateVtexToVtex(ExcelWorksheet excelWorksheet, int startRow, int endRow, IEnumerable<IdSummaViewModel> idSummaList, IEnumerable<CustomerSummaViewModel>  customerSummaList, IEnumerable<TradenameViewModel> tradenameList, IEnumerable<CategoryViewModel> categorylist) // IEnumerable<CustomerViewModel> customerList, I
         {
             List<CreatePreContractLogDetailCommand> preContractLogDetailsList = new List<CreatePreContractLogDetailCommand>();
             CreatePreContractLogDetailCommand preContractLogDetails = null;
@@ -694,8 +694,8 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                         else rucAnulled.Add(excelWorksheet.Cells[startRow, 1].Value.ToString());
                     }
 
-                    if (!customerList.Where(c => c.DocumentId == excelWorksheet.Cells[startRow, 1].Value.ToString().Trim()).Any())
-                        messageValidationCustomer = "El R.U.C., no esta registrado como cliente,";
+                    //if (!customerList.Where(c => c.DocumentId == excelWorksheet.Cells[startRow, 1].Value.ToString().Trim()).Any())
+                    //    messageValidationCustomer = "El R.U.C., no esta registrado como cliente,";
                 }
 
                 if (excelWorksheet.Cells[startRow, 2].Value != null && excelWorksheet.Cells[startRow, 1].Value != null)

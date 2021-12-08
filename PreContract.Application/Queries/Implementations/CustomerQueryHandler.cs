@@ -33,7 +33,7 @@ namespace Contracts.Aplication.Queries.Implementations
 
             var parametersXml = await _queryHandler.BuildParametersXml(parameters);
 
-            var result = await _queryHandler.Search<dynamic>("ADV_T_CLIENTE_search", parametersXml, string.Empty);
+            var result = await _queryHandler.Search<dynamic>("dbo.ADV_T_CLIENTE_search", parametersXml, string.Empty);
 
             return result.Select(item => (CustomerViewModel)_customerMapper.MapToViewModel(item));
         }

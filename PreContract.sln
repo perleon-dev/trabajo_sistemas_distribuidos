@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreContract.Domain", "PreCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreContract.Repository", "PreContract.Repository\PreContract.Repository.csproj", "{698E5693-FF6C-4AFD-A220-AD931689162F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreContract.UnitTests", "PreContract.UnitTests\PreContract.UnitTests.csproj", "{2719EE88-7CC4-4A15-8F86-53F482836962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreContract.UnitTests", "PreContract.UnitTests\PreContract.UnitTests.csproj", "{2719EE88-7CC4-4A15-8F86-53F482836962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

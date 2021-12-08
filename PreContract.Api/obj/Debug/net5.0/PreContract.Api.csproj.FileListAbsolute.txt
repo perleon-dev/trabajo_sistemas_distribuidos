@@ -1,13 +1,12 @@
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.csproj.AssemblyReference.cache
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.AssemblyInfoInputs.cache
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.AssemblyInfo.cs
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.csproj.CoreCompileInputs.cache
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\appsettings.Development.json
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\appsettings.json
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Api.exe
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Templates\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Templates\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Templates\Formato VTexToVTex.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Resources\Formato SellerCenter.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Resources\Formato VTEX.xlsx
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Resources\Formato VTexToVTex.xlsx
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Api.deps.json
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Api.runtimeconfig.json
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Api.runtimeconfig.dev.json
@@ -21,7 +20,6 @@ D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\MediatR.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -41,6 +39,13 @@ D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backe
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Application.pdb
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Domain.pdb
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\bin\Debug\net5.0\PreContract.Repository.pdb
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.csproj.AssemblyReference.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.AssemblyInfo.cs
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\PreContract.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\staticwebassets\PreContract.Api.StaticWebAssets.Manifest.cache
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\staticwebassets\PreContract.Api.StaticWebAssets.xml
 D:\notocar\Apliaciones\Sistemas Distribuidos\trabajo_sistemas_distribuidos_backend\PreContract.Api\obj\Debug\net5.0\scopedcss\bundle\PreContract.Api.styles.css
