@@ -2,8 +2,6 @@
 using Contracts.Api.Application.Queries.Interfaces;
 using Contracts.Api.Application.Queries.ViewModels;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
