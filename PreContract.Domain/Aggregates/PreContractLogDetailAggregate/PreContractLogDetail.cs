@@ -1,7 +1,7 @@
-﻿using Contracts.Api.Domain.Core;
+﻿using PreContracts.Api.Domain.Core;
 using System;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractLogDetailAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractLogDetailAggregate
 {
 	public class PreContractLogDetail : Entity
 	{

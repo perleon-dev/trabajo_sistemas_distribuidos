@@ -1,4 +1,4 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
 using Dapper;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Repository.Repositories
+namespace PreContracts.Api.Repository.Repositories
 {
 	public class PreContractLogDetailRepository : IPreContractLogDetailRepository
 	{

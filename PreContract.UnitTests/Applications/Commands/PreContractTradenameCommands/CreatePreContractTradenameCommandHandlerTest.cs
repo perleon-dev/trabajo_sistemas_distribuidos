@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractTradenameCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+﻿using PreContracts.Api.Application.Commands.PreContractTradenameCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
 using FluentAssertions;
 using Moq;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractTradenameCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractTradenameCommands
 {
     public class CreatePreContractTradenameCommandHandlerTest
     {

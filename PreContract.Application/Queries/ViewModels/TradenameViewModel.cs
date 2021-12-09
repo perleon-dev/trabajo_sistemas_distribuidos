@@ -1,5 +1,5 @@
 
-using Contracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Application.Queries.ViewModels;
 using System;
 
 namespace Contracts.Application.Queries.ViewModels

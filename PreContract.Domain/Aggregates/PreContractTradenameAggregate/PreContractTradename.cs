@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Domain.Core;
+﻿using PreContracts.Api.Domain.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate
 {
 	public class PreContractTradename : Entity
 	{

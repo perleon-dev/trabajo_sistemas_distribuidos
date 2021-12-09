@@ -1,4 +1,4 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
 using Dapper;
 using Newtonsoft.Json;
 using System;
@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Repository.Repositories
+namespace PreContracts.Api.Repository.Repositories
 {
 	public class PreContractTradenameRepository : IPreContractTradenameRepository
 	{

@@ -3,9 +3,9 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Contracts.Api.Domain.Aggregates.LogContractAggregate;
+using PreContracts.Api.Domain.Aggregates.LogContractAggregate;
 
-namespace Contracts.Api.Application.Commands.LogContractCommand
+namespace PreContracts.Api.Application.Commands.LogContractCommand
 {
 	public class CreateLogContractCommandHandler : IRequestHandler<CreateLogContractCommand, int>
 	{

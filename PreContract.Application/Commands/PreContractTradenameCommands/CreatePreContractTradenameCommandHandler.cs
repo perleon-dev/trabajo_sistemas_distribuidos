@@ -1,12 +1,12 @@
-﻿using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Util;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractTradenameCommands
+namespace PreContracts.Api.Application.Commands.PreContractTradenameCommands
 {
 	public class CreatePreContractTradenameCommandHandler : IRequestHandler<CreatePreContractTradenameCommand, int>
 	{

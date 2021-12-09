@@ -1,4 +1,4 @@
-using Contracts.Api.Domain.Aggregates.LogContractAggregate;
+using PreContracts.Api.Domain.Aggregates.LogContractAggregate;
 using Dapper;
 using System;
 using System.Data;

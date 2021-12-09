@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractLogAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractLogAggregate
 {
 	public interface IPreContractLogRepository
 	{

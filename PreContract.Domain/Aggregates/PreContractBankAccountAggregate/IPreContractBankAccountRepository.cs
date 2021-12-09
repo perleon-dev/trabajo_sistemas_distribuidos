@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractBankAccountAggregate
 {
 	public interface IPreContractBankAccountRepository
 	{

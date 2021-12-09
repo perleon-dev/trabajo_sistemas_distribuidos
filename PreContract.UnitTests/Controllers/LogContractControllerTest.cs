@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.LogContractCommand;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Commands.LogContractCommand;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -8,10 +8,10 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Xunit;
-using PreContracts.API.Controllers;
+using PrePreContracts.Api.Controllers;
 using FluentAssertions;
 
-namespace Contracts.Api.UnitTests.Controllers
+namespace PreContracts.Api.UnitTests.Controllers
 {
     public class LogContractControllerTest
     {

@@ -1,12 +1,12 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractAggregate
 {
 	public interface IPreContractRepository
 	{

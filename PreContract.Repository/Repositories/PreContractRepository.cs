@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
 using Dapper;
 using Newtonsoft.Json;
 using System;
@@ -12,7 +12,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Repository.Repositories
+namespace PreContracts.Api.Repository.Repositories
 {
 	public class PreContractRepository : IPreContractRepository
 	{

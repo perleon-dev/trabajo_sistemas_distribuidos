@@ -1,12 +1,12 @@
-﻿using Contracts.Api.Application.Commands.PreContractBankAccountCommands;
-using Contracts.Api.Application.Commands.PreContractEconomicConditionCommands;
-using Contracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands;
-using Contracts.Api.Application.Commands.PreContractTradenameCommands;
-using Contracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand;
+﻿using PreContracts.Api.Application.Commands.PreContractBankAccountCommands;
+using PreContracts.Api.Application.Commands.PreContractEconomicConditionCommands;
+using PreContracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands;
+using PreContracts.Api.Application.Commands.PreContractTradenameCommands;
+using PreContracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand;
 using MediatR;
 using System.Collections.Generic;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
     public class UnifiedPreContractCommand : IRequest<int>
     {

@@ -1,10 +1,10 @@
-﻿using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Queries.Interfaces
+namespace PreContracts.Api.Application.Queries.Interfaces
 {
 	public interface IPreContractLogQuery
 	{

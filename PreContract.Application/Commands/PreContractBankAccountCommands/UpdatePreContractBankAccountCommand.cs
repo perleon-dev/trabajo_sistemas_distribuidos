@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Contracts.Api.Application.Commands.PreContractBankAccountCommands
+namespace PreContracts.Api.Application.Commands.PreContractBankAccountCommands
 {
 	public class UpdatePreContractBankAccountCommand : IRequest<int>
 	{

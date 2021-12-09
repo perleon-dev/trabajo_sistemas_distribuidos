@@ -1,7 +1,7 @@
 ﻿
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.Querys;
-using Contracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.Querys;
+using PreContracts.Api.Application.Queries.ViewModels;
 
 using FluentAssertions;
 using MediatR;
@@ -11,12 +11,12 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Xunit;
-using Contracts.Api.Application.Commands.PreContractCommands;
-using Contracts.Api.Domain.Util;
-using PreContracts.Api.Controllers;
-using Contracts.Api.Application.Queries.Implementations;
+using PreContracts.Api.Application.Commands.PreContractCommands;
+using PreContracts.Api.Domain.Util;
+using PrePreContracts.Api.Controllers;
+using PreContracts.Api.Application.Queries.Implementations;
 
-namespace Contracts.Api.UnitTests.Controllers
+namespace PreContracts.Api.UnitTests.Controllers
 {
     public class PreContractControllerTest
     {

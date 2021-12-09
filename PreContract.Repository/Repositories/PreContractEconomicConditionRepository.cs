@@ -1,4 +1,4 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
 using Dapper;
 using Newtonsoft.Json;
 using System;
@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Repository.Repositories
+namespace PreContracts.Api.Repository.Repositories
 {
 	public class PreContractEconomicConditionRepository : IPreContractEconomicConditionRepository
 	{

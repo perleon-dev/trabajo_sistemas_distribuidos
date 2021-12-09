@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractTradenameCommands
+namespace PreContracts.Api.Application.Commands.PreContractTradenameCommands
 {
 	public class UpdatePreContractTradenameCommand : IRequest<int>
 	{

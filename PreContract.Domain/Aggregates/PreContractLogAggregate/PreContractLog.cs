@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
-using Contracts.Api.Domain.Core;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
+using PreContracts.Api.Domain.Core;
 using System;
 using System.Collections.Generic;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractLogAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractLogAggregate
 {
 	public class PreContractLog : Entity
 	{

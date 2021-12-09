@@ -1,7 +1,7 @@
 
 using System;
 
-namespace Contracts.Api.Application.Queries.ViewModels
+namespace PreContracts.Api.Application.Queries.ViewModels
 {
 	public class LogContractViewModel
 	{

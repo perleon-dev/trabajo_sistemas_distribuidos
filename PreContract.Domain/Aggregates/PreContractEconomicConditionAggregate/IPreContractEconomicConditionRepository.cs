@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate
 {
 	public interface IPreContractEconomicConditionRepository
 	{

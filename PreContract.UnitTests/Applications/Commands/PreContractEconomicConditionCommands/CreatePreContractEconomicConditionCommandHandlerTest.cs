@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractEconomicConditionCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+﻿using PreContracts.Api.Application.Commands.PreContractEconomicConditionCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
 using FluentAssertions;
 using Moq;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractEconomicConditionCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractEconomicConditionCommands
 {
     public class CreatePreContractEconomicConditionCommandHandlerTest
     {

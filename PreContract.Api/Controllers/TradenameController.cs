@@ -8,7 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PreContracts.API.Controllers
+namespace PrePreContracts.Api.Controllers
 {
 	[Route("tradenames")]
 	[ApiController]

@@ -1,14 +1,14 @@
-﻿using Contracts.Api.Application.Commands.PreContractLogCommands;
-using Contracts.Api.Application.Commands.PreContractLogDetailCommand;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Commands.PreContractLogCommands;
+using PreContracts.Api.Application.Commands.PreContractLogDetailCommand;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Domain.Util;
 using Contracts.Aplication.Queries.Interfaces;
 using Contracts.Aplication.Queries.ViewModel;
 using Contracts.Application.Queries.Interfaces;
 using Contracts.Application.Queries.ViewModels;
-//using Contracts.Api.Services.Interfaces;
+//using PreContracts.Api.Services.Interfaces;
 using MediatR;
 using Newtonsoft.Json;
 //using Newtonsoft.Json;
@@ -23,7 +23,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
     [ExcludeFromCodeCoverage]
     public class CreatePreContractMasisveCommandHandler : IRequestHandler<CreatePreContractMasisveCommand, MessageResponse>

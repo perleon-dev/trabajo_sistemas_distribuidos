@@ -2,7 +2,7 @@ using System;
 
 using MediatR;
 
-namespace Contracts.Api.Application.Commands.LogContractCommand
+namespace PreContracts.Api.Application.Commands.LogContractCommand
 {
 	public class UpdateLogContractCommand : IRequest<int>
 	{

@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractBankAccountCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
+﻿using PreContracts.Api.Application.Commands.PreContractBankAccountCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
 using FluentAssertions;
 using Moq;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractBankAccountCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractBankAccountCommands
 {
     public class CreatePreContractBankAccountCommandHandlerTest
     {

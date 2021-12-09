@@ -1,7 +1,7 @@
-﻿using Contracts.Api.Domain.Core;
+﻿using PreContracts.Api.Domain.Core;
 using System;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractAggregate
 {
 	public class PreContract : Entity
 	{

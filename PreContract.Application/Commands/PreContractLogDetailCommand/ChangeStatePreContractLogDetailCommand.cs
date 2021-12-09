@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractLogDetailCommand
+namespace PreContracts.Api.Application.Commands.PreContractLogDetailCommand
 {
     public class ChangeStatePreContractLogDetailCommand : IRequest<int>
     {

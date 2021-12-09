@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Queries.Querys
+namespace PreContracts.Api.Application.Queries.Querys
 {
     public class CategoryQuery
     {

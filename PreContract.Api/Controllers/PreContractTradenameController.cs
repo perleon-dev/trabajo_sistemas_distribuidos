@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractTradenameCommands;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Commands.PreContractTradenameCommands;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace PreContracts.Api.Controllers
+namespace PrePreContracts.Api.Controllers
 {
 	[Route("contracts/pre-contract/tradenames")]
 	[ApiController]

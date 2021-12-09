@@ -1,7 +1,7 @@
-﻿using Contracts.Api.Application.Commands.PreContractLogCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractLogAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Commands.PreContractLogCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractLogAggregate;
+using PreContracts.Api.Domain.Util;
 using FluentAssertions;
 using Moq;
 using System;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractLogCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractLogCommands
 {
     public class CreatePreContractLogCommandHandlerTest
     {

@@ -1,8 +1,8 @@
-﻿using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.Mappers;
-using Contracts.Api.Application.Queries.Querys;
-using Contracts.Api.Application.Queries.ViewModels;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.Mappers;
+using PreContracts.Api.Application.Queries.Querys;
+using PreContracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Domain.Util;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using System;
@@ -14,7 +14,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Queries.Implementations
+namespace PreContracts.Api.Application.Queries.Implementations
 {
 	public class PreContractQuery : IPreContractQuery
 	{

@@ -1,13 +1,13 @@
-﻿using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.Mappers;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.Mappers;
+using PreContracts.Api.Application.Queries.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Queries.Implementations
+namespace PreContracts.Api.Application.Queries.Implementations
 {
 	public class PreContractFixedCommissionRangeQuery : IPreContractFixedCommissionRangeQuery
 	{

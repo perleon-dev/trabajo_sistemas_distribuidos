@@ -1,4 +1,4 @@
-﻿namespace Contracts.Api.Domain.Util
+﻿namespace PreContracts.Api.Domain.Util
 {
     public class Constants
     {

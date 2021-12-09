@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Domain.Aggregates.PreContractAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Util;
-//using Contracts.Api.Services.Interfaces;
+﻿using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Util;
+//using PreContracts.Api.Services.Interfaces;
 using MediatR;
 //using Newtonsoft.Json;
 using System;
@@ -15,7 +15,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
     [ExcludeFromCodeCoverage]
     public class SendPreContractCommandHandler : IRequestHandler<SendPreContractCommand, MessageResponse>
@@ -43,11 +43,11 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
                 var documentList = string.Empty;
 
 
-                var preContractsToUpdate = new List<Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>();
+                var preContractsToUpdate = new List<PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>();
                 var preContractTradenamesToUpdate = new List<PreContractTradename>();
 
                 foreach (var preContract in request.sendPreContractList)
-                    preContractsToUpdate.Add(new Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract(preContract.contract_id, preContract.contract_version, preContract.contract_modification, request.state, request.registerUserId, request.registerFullname));
+                    preContractsToUpdate.Add(new PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract(preContract.contract_id, preContract.contract_version, preContract.contract_modification, request.state, request.registerUserId, request.registerFullname));
 
                 await _iPreContractRepository.UpdateStateJson(preContractsToUpdate, preContractTradenamesToUpdate);
 

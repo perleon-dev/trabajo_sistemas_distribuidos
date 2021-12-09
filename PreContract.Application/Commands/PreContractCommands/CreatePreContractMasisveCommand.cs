@@ -1,11 +1,11 @@
-﻿using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Domain.Util;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
     public class CreatePreContractMasisveCommand : IRequest<MessageResponse>
     {

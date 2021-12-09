@@ -1,7 +1,7 @@
-﻿using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractLogAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractLogAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractLogDetailAggregate;
+using PreContracts.Api.Domain.Util;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractLogCommands
+namespace PreContracts.Api.Application.Commands.PreContractLogCommands
 {
 	public class CreatePreContractLogCommandHandler : IRequestHandler<CreatePreContractLogCommand, int>
 	{

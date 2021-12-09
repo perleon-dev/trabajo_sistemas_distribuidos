@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate
 {
 	public interface IPreContractVariableCommissionRangeRepository
 	{

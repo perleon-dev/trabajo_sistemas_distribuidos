@@ -1,8 +1,8 @@
-﻿using Contracts.Api.Application.Queries.Implementations;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.Mappers;
-using Contracts.Api.Application.Queries.Querys;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.Implementations;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.Mappers;
+using PreContracts.Api.Application.Queries.Querys;
+using PreContracts.Api.Application.Queries.ViewModels;
 using FluentAssertions;
 using Moq;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Dynamic;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Queries
+namespace PreContracts.Api.UnitTests.Application.Queries
 {
     public class PreContractQueryTest
     {

@@ -1,18 +1,18 @@
-﻿using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
+using PreContracts.Api.Domain.Util;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
 	public class UnifiedPreContractCommandHandler : IRequestHandler<UnifiedPreContractCommand, int>
 	{
@@ -28,7 +28,7 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
 		public async Task<int> Handle(UnifiedPreContractCommand request, CancellationToken cancellationToken)
 		{
 			var preContractCommand = request.preContract;
-			Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract preContract = new Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract(preContractCommand.contract_version, preContractCommand.contract_modification, preContractCommand.contract_start_date, preContractCommand.contract_end_date, preContractCommand.ruc, preContractCommand.bank_account, preContractCommand.cci, preContractCommand.code_contract, preContractCommand.type_seller, preContractCommand.distribution_type, preContractCommand.product_commission, preContractCommand.state, preContractCommand.active, preContractCommand.tradename_id, preContractCommand.mall_id, preContractCommand.bank_id, preContractCommand.type_currency, preContractCommand.bank_account_type, preContractCommand.segment_id, preContractCommand.origin, preContractCommand.ubigeo, preContractCommand.commercial_template_id, preContractCommand.register_user_id, preContractCommand.register_user_fullname, DateTime.Now.Peru(_iValuesSettingsApi.GetTimeZone()), preContractCommand.update_user_id, preContractCommand.update_user_fullname, null);
+			PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract preContract = new PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract(preContractCommand.contract_version, preContractCommand.contract_modification, preContractCommand.contract_start_date, preContractCommand.contract_end_date, preContractCommand.ruc, preContractCommand.bank_account, preContractCommand.cci, preContractCommand.code_contract, preContractCommand.type_seller, preContractCommand.distribution_type, preContractCommand.product_commission, preContractCommand.state, preContractCommand.active, preContractCommand.tradename_id, preContractCommand.mall_id, preContractCommand.bank_id, preContractCommand.type_currency, preContractCommand.bank_account_type, preContractCommand.segment_id, preContractCommand.origin, preContractCommand.ubigeo, preContractCommand.commercial_template_id, preContractCommand.register_user_id, preContractCommand.register_user_fullname, DateTime.Now.Peru(_iValuesSettingsApi.GetTimeZone()), preContractCommand.update_user_id, preContractCommand.update_user_fullname, null);
 			
 			var bankAccount = GetBankAccount(request);
 			var tradenames = GetTradenames(request);

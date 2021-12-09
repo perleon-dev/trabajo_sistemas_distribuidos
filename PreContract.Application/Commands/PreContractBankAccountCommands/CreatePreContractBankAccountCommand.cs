@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractBankAccountCommands
+namespace PreContracts.Api.Application.Commands.PreContractBankAccountCommands
 {
 	public class CreatePreContractBankAccountCommand : IRequest<int>
 	{

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate
 {
 	public interface IPreContractTradenameRepository
 	{

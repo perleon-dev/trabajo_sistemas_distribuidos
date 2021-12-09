@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Contracts.Api.Domain.Core
+namespace PreContracts.Api.Domain.Core
 {
     public class Entity
     {

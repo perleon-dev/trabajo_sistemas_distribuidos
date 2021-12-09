@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Application.Commands.PreContractCommands;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
-using Contracts.Api.Domain.Aggregates.PreContractAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Commands.PreContractCommands;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Util;
 using FluentAssertions;
 using Moq;
 using System;
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractCommands
 {
     public class UpdateMassiveStatePreContractCommandHandlerTest
     {
@@ -40,7 +40,7 @@ namespace Contracts.Api.UnitTests.Application.Commands.PreContractCommands
             _iPreContractTradenameQueryMock.Setup(x => x.GetBySearch(It.IsAny<PreContractTradenameRequest>())).Returns(Task.FromResult<IEnumerable<PreContractTradenameViewModel>>( tradenamesResult));
 
             var resultUpdateStateJson = 1;
-            _IPreContractRepositoryMock.Setup(x => x.UpdateStateJson(It.IsAny<List<Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>>(), It.IsAny<List<PreContractTradename>>())).Returns(Task.FromResult(resultUpdateStateJson));
+            _IPreContractRepositoryMock.Setup(x => x.UpdateStateJson(It.IsAny<List<PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>>(), It.IsAny<List<PreContractTradename>>())).Returns(Task.FromResult(resultUpdateStateJson));
 
             var expected = new MessageResponse()
             {

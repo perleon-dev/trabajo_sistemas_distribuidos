@@ -1,8 +1,8 @@
-﻿using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Queries.Interfaces
+namespace PreContracts.Api.Application.Queries.Interfaces
 {
     public interface IQueryHandler
     {

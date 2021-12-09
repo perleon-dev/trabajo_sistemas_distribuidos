@@ -1,5 +1,5 @@
-﻿using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace PreContracts.Api.Controllers
+namespace PrePreContracts.Api.Controllers
 {
     [Route("contracts/precontracts/logsDetail")]
     [ApiController]

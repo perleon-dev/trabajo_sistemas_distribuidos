@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Domain.Aggregates.PreContractLogDetailAggregate
+namespace PreContracts.Api.Domain.Aggregates.PreContractLogDetailAggregate
 {
 	public interface IPreContractLogDetailRepository
 	{

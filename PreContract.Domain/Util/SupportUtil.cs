@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.IO.Compression;
 
-namespace Contracts.Api.Domain.Util
+namespace PreContracts.Api.Domain.Util
 {
     public static class SupportUtil
     {

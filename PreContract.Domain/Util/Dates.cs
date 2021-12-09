@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Contracts.Api.Domain.Util
+namespace PreContracts.Api.Domain.Util
 {
     [ExcludeFromCodeCoverage]
     public static class Dates

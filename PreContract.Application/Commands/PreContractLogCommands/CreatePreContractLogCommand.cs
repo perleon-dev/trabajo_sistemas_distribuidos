@@ -1,10 +1,10 @@
-﻿using Contracts.Api.Application.Commands.PreContractLogDetailCommand;
+﻿using PreContracts.Api.Application.Commands.PreContractLogDetailCommand;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractLogCommands
+namespace PreContracts.Api.Application.Commands.PreContractLogCommands
 {
 	public class CreatePreContractLogCommand : IRequest<int>
 	{

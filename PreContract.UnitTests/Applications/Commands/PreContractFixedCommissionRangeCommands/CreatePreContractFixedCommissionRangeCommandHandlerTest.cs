@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
+﻿using PreContracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
 using FluentAssertions;
 using Moq;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractFixedCommissionRangeCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractFixedCommissionRangeCommands
 {
     public class CreatePreContractFixedCommissionRangeCommandHandlerTest
     {

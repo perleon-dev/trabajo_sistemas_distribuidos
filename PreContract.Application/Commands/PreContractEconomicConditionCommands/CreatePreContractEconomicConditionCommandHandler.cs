@@ -1,12 +1,12 @@
-﻿using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+using PreContracts.Api.Domain.Util;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractEconomicConditionCommands
+namespace PreContracts.Api.Application.Commands.PreContractEconomicConditionCommands
 {
 	public class CreatePreContractEconomicConditionCommandHandler : IRequestHandler<CreatePreContractEconomicConditionCommand, int>
 	{

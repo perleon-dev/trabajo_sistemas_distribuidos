@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
+using PreContracts.Api.Domain.Util;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand
+namespace PreContracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand
 {
 	public class CreatePreContractVariableCommissionRangeCommandHandler : IRequestHandler<CreatePreContractVariableCommissionRangeCommand, int>
 	{

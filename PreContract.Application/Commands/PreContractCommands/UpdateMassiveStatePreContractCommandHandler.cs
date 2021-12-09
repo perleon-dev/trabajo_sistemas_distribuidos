@@ -1,7 +1,7 @@
-﻿using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Domain.Aggregates.PreContractAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Util;
 using MediatR;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
 	public class UpdateMassiveStatePreContractCommandHandler : IRequestHandler<UpdateMassiveStatePreContractCommand, MessageResponse>
 	{
@@ -27,11 +27,11 @@ namespace Contracts.Api.Application.Commands.PreContractCommands
 			try
 			{
 
-				var preContractsToUpdate = new List<Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>();
+				var preContractsToUpdate = new List<PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>();
 				var preContractTradenamesToUpdate = new List<PreContractTradename>();
 
 				foreach (var preContract in request.preContractList)
-					preContractsToUpdate.Add(new Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract(preContract.contractId, preContract.contractVersion, preContract.contractModification, request.state, request.updateUserId, request.updateUserFullname));
+					preContractsToUpdate.Add(new PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract(preContract.contractId, preContract.contractVersion, preContract.contractModification, request.state, request.updateUserId, request.updateUserFullname));
 
 				await _iPreContractRepository.UpdateStateJson(preContractsToUpdate, preContractTradenamesToUpdate);
 

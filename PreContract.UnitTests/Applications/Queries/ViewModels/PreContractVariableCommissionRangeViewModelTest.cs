@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.ViewModels;
 using FluentAssertions;
 using System;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Queries.ViewModels
+namespace PreContracts.Api.UnitTests.Application.Queries.ViewModels
 {
     public class PreContractVariableCommissionRangeViewModelTest
     {

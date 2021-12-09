@@ -1,14 +1,14 @@
-﻿using Contracts.Api.Application.Commands.PreContractBankAccountCommands;
-using Contracts.Api.Application.Commands.PreContractCommands;
-using Contracts.Api.Application.Commands.PreContractEconomicConditionCommands;
-using Contracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands;
-using Contracts.Api.Application.Commands.PreContractLogCommands;
-using Contracts.Api.Application.Commands.PreContractLogDetailCommand;
-using Contracts.Api.Application.Commands.PreContractTradenameCommands;
-using Contracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
-using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Application.Commands.PreContractBankAccountCommands;
+using PreContracts.Api.Application.Commands.PreContractCommands;
+using PreContracts.Api.Application.Commands.PreContractEconomicConditionCommands;
+using PreContracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands;
+using PreContracts.Api.Application.Commands.PreContractLogCommands;
+using PreContracts.Api.Application.Commands.PreContractLogDetailCommand;
+using PreContracts.Api.Application.Commands.PreContractTradenameCommands;
+using PreContracts.Api.Application.Commands.PreContractVariableCommissionRangeCommand;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Domain.Util;
 using Contracts.Aplication.Queries.Interfaces;
 using Contracts.Aplication.Queries.ViewModel;
 using Contracts.Application.Queries.Interfaces;
@@ -67,7 +67,7 @@ namespace PreContract.Application.Commands.PreContractCommands
             if (logCab != null)
             {
 
-                var categories = await _iCategoryQueryHandler.Search(new Contracts.Api.Application.Queries.Querys.CategoryQuery { });
+                var categories = await _iCategoryQueryHandler.Search(new PreContracts.Api.Application.Queries.Querys.CategoryQuery { });
                 var tradenames = await _iTradenameQuery.GetBySearch(new Contracts.Application.Queries.ViewModels.TradenameRequest {});
                 var idsSumma = await _iIdSummaQuery.GetBySearch( new Contracts.Aplication.Queries.ViewModel.IdSummaRequest { });
 

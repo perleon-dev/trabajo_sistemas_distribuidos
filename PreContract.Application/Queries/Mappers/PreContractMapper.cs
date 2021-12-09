@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.ViewModels;
 
-namespace Contracts.Api.Application.Queries.Mappers
+namespace PreContracts.Api.Application.Queries.Mappers
 {
 	public interface IPreContractMapper
 	{

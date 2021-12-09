@@ -1,11 +1,11 @@
-﻿using Contracts.Api.Application.Commands.PreContractCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
-using Contracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
+﻿using PreContracts.Api.Application.Commands.PreContractCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractBankAccountAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractEconomicConditionAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractFixedCommissionRangeAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractTradenameAggregate;
+using PreContracts.Api.Domain.Aggregates.PreContractVariableCommissionRangeAggregate;
 using FluentAssertions;
 using Moq;
 using System;
@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractCommands
 {
     public class UnifiedPreContractCommandHandlerTest
     {
@@ -38,7 +38,7 @@ namespace Contracts.Api.UnitTests.Application.Commands.PreContractCommands
             _IValuesSettingsApi.Setup(x => x.GetTimeZone()).Returns(timeZone);
 
             var result = 0;
-            _IPreContractRepository.Setup(x => x.RegisterUnified(It.IsAny<Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>(), It.IsAny<PreContractBankAccount>(), It.IsAny<List<PreContractTradename>>(),
+            _IPreContractRepository.Setup(x => x.RegisterUnified(It.IsAny<PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>(), It.IsAny<PreContractBankAccount>(), It.IsAny<List<PreContractTradename>>(),
                                                                  It.IsAny<List<PreContractFixedCommissionRange>>(), It.IsAny<List<PreContractVariableCommissionRange>>(),
                                                                  It.IsAny<List<PreContractEconomicCondition>>())).Returns(Task.FromResult(result));
 

@@ -7,11 +7,11 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
-using Contracts.Api.Application.Commands.LogContractCommand;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Application.Commands.LogContractCommand;
 
-namespace PreContracts.API.Controllers
+namespace PrePreContracts.Api.Controllers
 {
 
 	[Route("contracts/logs")]

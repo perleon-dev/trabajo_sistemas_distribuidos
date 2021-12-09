@@ -1,11 +1,11 @@
-﻿using Contracts.Api.Domain.Aggregates.PreContractLogAggregate;
+﻿using PreContracts.Api.Domain.Aggregates.PreContractLogAggregate;
 using Dapper;
 using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace Contracts.Api.Repository.Repositories
+namespace PreContracts.Api.Repository.Repositories
 {
 	public class PreContractLogRepository : IPreContractLogRepository
 	{

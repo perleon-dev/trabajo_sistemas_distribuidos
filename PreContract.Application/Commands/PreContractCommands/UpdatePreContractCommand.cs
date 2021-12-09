@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
 	public class UpdatePreContractCommand : IRequest<int>
 	{

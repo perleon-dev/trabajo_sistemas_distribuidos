@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Contracts.Api.Application.Commands.PreContractEconomicConditionCommands
+namespace PreContracts.Api.Application.Commands.PreContractEconomicConditionCommands
 {
 	public class CreatePreContractEconomicConditionCommand : IRequest<int>
 	{

@@ -1,5 +1,5 @@
-﻿using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using Dapper;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Contracts.Api.Application.Queries.Querys
+namespace PreContracts.Api.Application.Queries.Querys
 {
     [ExcludeFromCodeCoverage]
     public class QueryHandler : IQueryHandler

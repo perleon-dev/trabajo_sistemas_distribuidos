@@ -1,10 +1,10 @@
-﻿using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Domain.Util;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
     public class SendPreContractCommand : IRequest<MessageResponse>
     {

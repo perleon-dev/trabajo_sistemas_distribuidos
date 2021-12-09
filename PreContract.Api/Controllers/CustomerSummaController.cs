@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace PreContracts.Api.Controllers
+namespace PrePreContracts.Api.Controllers
 {
 	[Route("sellers/customersumma")]
 	[ApiController]

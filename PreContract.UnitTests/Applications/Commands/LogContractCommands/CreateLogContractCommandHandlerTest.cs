@@ -1,12 +1,12 @@
-﻿using Contracts.Api.Application.Commands.LogContractCommand;
-using Contracts.Api.Domain.Aggregates.LogContractAggregate;
+﻿using PreContracts.Api.Application.Commands.LogContractCommand;
+using PreContracts.Api.Domain.Aggregates.LogContractAggregate;
 using FluentAssertions;
 using Moq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.LogContractCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.LogContractCommands
 {
     public class CreateLogContractCommandHandlerTest
     {

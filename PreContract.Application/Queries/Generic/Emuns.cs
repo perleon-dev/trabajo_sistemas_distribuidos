@@ -1,4 +1,4 @@
-﻿namespace Contracts.Api.Application.Queries.Generic
+﻿namespace PreContracts.Api.Application.Queries.Generic
 {
     public class Emuns { }
 

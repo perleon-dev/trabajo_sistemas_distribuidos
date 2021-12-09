@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractBankAccountCommands;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Commands.PreContractBankAccountCommands;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +11,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace PreContracts.Api.Controllers
+namespace PrePreContracts.Api.Controllers
 {
 	[Route("contracts/pre-contract/bank-accounts")]
 	[ApiController]

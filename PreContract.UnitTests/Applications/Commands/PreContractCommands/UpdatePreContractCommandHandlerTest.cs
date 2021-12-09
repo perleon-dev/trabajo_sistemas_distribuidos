@@ -1,6 +1,6 @@
-﻿using Contracts.Api.Application.Commands.PreContractCommands;
-using Contracts.Api.Application.Queries.Generic;
-using Contracts.Api.Domain.Aggregates.PreContractAggregate;
+﻿using PreContracts.Api.Application.Commands.PreContractCommands;
+using PreContracts.Api.Application.Queries.Generic;
+using PreContracts.Api.Domain.Aggregates.PreContractAggregate;
 using FluentAssertions;
 using Moq;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Contracts.Api.UnitTests.Application.Commands.PreContractCommands
+namespace PreContracts.Api.UnitTests.Application.Commands.PreContractCommands
 {
     public class UpdatePreContractCommandHandlerTest
     {
@@ -32,7 +32,7 @@ namespace Contracts.Api.UnitTests.Application.Commands.PreContractCommands
             _IValuesSettings.Setup(x => x.GetTimeZone()).Returns(timeZone);
 
             var result = 0;
-            _IPreContractRepository.Setup(x => x.Register(It.IsAny<Contracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>())).Returns(Task.FromResult(result));
+            _IPreContractRepository.Setup(x => x.Register(It.IsAny<PreContracts.Api.Domain.Aggregates.PreContractAggregate.PreContract>())).Returns(Task.FromResult(result));
             var current = await this._sut.Handle(command, new System.Threading.CancellationToken());
             current.Should().Be(result);
 

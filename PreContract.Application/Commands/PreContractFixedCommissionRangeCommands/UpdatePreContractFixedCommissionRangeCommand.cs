@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands
+namespace PreContracts.Api.Application.Commands.PreContractFixedCommissionRangeCommands
 {
 	public class UpdatePreContractFixedCommissionRangeCommand : IRequest<int>
 	{

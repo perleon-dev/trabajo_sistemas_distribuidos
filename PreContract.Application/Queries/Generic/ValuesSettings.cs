@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Contracts.Api.Application.Queries.Generic
+namespace PreContracts.Api.Application.Queries.Generic
 {
     [ExcludeFromCodeCoverage]
     public class ValuesSettings : IValuesSettings

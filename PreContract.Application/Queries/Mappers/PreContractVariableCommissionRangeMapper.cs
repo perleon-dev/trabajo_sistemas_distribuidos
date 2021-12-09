@@ -1,9 +1,9 @@
-﻿using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Queries.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Api.Application.Queries.Mappers
+namespace PreContracts.Api.Application.Queries.Mappers
 {
 	public interface IPreContractVariableCommissionRangeMapper
 	{

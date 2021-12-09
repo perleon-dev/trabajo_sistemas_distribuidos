@@ -1,8 +1,8 @@
-﻿using Contracts.Api.Domain.Util;
+﻿using PreContracts.Api.Domain.Util;
 using MediatR;
 using System.Collections.Generic;
 
-namespace Contracts.Api.Application.Commands.PreContractCommands
+namespace PreContracts.Api.Application.Commands.PreContractCommands
 {
 	public class UpdateMassiveStatePreContractCommand : IRequest<MessageResponse>
 	{

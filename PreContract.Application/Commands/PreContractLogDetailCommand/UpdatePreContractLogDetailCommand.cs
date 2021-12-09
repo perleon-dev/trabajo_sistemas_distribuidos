@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Contracts.Api.Application.Commands.PreContractLogDetailCommand
+namespace PreContracts.Api.Application.Commands.PreContractLogDetailCommand
 {
 	public class UpdatePreContractLogDetailCommand : IRequest<int>
 	{

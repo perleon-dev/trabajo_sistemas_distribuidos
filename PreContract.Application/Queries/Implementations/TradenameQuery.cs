@@ -1,5 +1,5 @@
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using Contracts.Application.Queries.Interfaces;
 using Contracts.Application.Queries.Mappers;
 using Contracts.Application.Queries.ViewModels;

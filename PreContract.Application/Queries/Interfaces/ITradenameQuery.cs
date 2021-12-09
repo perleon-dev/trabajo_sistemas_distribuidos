@@ -1,4 +1,4 @@
-using Contracts.Api.Application.Queries.ViewModels;
+using PreContracts.Api.Application.Queries.ViewModels;
 using Contracts.Application.Queries.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;

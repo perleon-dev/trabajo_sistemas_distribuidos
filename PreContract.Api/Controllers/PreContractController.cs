@@ -1,7 +1,7 @@
-﻿using Contracts.Api.Application.Commands.PreContractCommands;
-using Contracts.Api.Application.Queries.Implementations;
-using Contracts.Api.Application.Queries.Interfaces;
-using Contracts.Api.Application.Queries.ViewModels;
+﻿using PreContracts.Api.Application.Commands.PreContractCommands;
+using PreContracts.Api.Application.Queries.Implementations;
+using PreContracts.Api.Application.Queries.Interfaces;
+using PreContracts.Api.Application.Queries.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace PreContracts.Api.Controllers
+namespace PrePreContracts.Api.Controllers
 {
 	[Route("contracts/pre-contract")]
 	[ApiController]
